@@ -1,12 +1,12 @@
 import "../style/Card.scss";
 
-function Card(props) {
+function Card01(props) {
   return (
     <article className="card">
       <img className="card__img" src={props.imgSrc} alt={props.dish} />
       <p className="card__attribution">
         {/* necesita el update con un if para decidir si es Flickr o Wikimiedia Commons */}
-        <a href={props.imgUrl} target="_blank">
+        <a href={props.imgUrl} target="_blank" rel="noreferrer">
           Flickr / {props.author}
         </a>
       </p>
@@ -17,4 +17,4 @@ function Card(props) {
   );
 }
 
-export default Card;
+export default Card01;

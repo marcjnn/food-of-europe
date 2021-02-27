@@ -1,0 +1,47 @@
+@import "../style/mixins.scss";
+
+.dish {
+  width: fit-content;
+  display: flex;
+  border: 5px solid crimson;
+  border-radius: 10px;
+  position: relative;
+  &__photo {
+    max-width: 80vw;
+    border-radius: 4px;
+    @include tablet {
+      max-width: 45vw;
+    }
+    @include desktop {
+      max-width: 20vw;
+    }
+  }
+  &__origin {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0 0 4px 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+  }
+  &__name {
+    padding-top: 6px;
+    font-size: 22px;
+    text-transform: capitalize;
+    @include tablet {
+      font-size: 20px;
+    }
+    @include desktop {
+      font-size: 18px;
+    }
+  }
+  &__flag {
+    height: 30px;
+    @include tablet {
+      height: 20px;
+    }
+  }
+}

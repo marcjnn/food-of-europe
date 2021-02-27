@@ -1,0 +1,16 @@
+@import "../style/mixins.scss";
+@import "../style/reset.scss";
+
+.dishes {
+  font-family: "Handlee", cursive;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  row-gap: 20px;
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
