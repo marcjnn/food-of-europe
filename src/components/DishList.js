@@ -6,7 +6,7 @@ function DishList(props) {
   const food = props.data.map((dish) => {
     return (
       <li key={dish.id}>
-        <DishItem data={dish} />
+        <DishItem data={dish} addToFavorites={props.addToFavorites} />
       </li>
     );
   });
